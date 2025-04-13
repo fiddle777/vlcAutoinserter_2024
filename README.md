@@ -18,11 +18,15 @@ A Python-powered tool to organize new songs, extract metadata, generate a playli
 ## Folder Structure
 
 - The program needs a specific structure to work:
-- MyMusicFolder/Autoinserter/New Songs  <- Your new songs go here
+- MyMusicFolder/Autoinserter/New Songs  <- New songs go here
+- MyMusicFolder/Autoinserter/py/AutoInserter.py  <- Py file goes here
+- MyMusicFolder/Music/  <- All songs are stored here in album folders
+- MyMusicFolder/  <- m3u8 playlists are hanging around here
 
 
 ## Requirements
-Install the dependencies with:
+
+Install the required Python packages before running:
 
 ```bash
-pip install -r requirements.txt
+pip install pandas eyed3 pygame colorama natsort openpyxl
